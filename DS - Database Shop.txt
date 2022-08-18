@@ -1,0 +1,38 @@
+DS_1:
+
+There is a courier table that includes the courier’s ID, first name, city, availability and number of parcels currently delivered.
+1. Queries have been created that perform the following operations on the couriers table:
+a. display the ID and names of all couriers,
+b. display the ID of all couriers from Wroclaw,
+c. display the ID of all available couriers outside Wroclaw,
+d. display the ID and first names of all couriers with first names beginning with the letter M;
+e. Display the IDs and cities of all couriers, sorted by number of shipments delivered.
+
+DS_2:
+
+Queries have been created that perform the following operations on the courier table:
+a. insert a new courier,
+b. change the status of the courier with ID 176 to the available 
+c. remove all couriers from Warsaw from the table
+
+DS_3:
+
+Queries have been created that perform the following operations on the order table:
+a. display the minimum and maximum order value,
+b. display the average and aggregate number of products in all orders,
+c. Display the number of paid orders.
+
+DS_4:
+
+Queries have been created that perform the following operations on the tables Orders and Parcels:
+a. Display the ID of the orders sent together with the shipping data from the parcels table
+b. display the ID of all parcels together with the value and number of goods in the corresponding orders.
+
+DS_5:
+
+A new "returned" table has been created with the following fields:
+a. returned_id: integer, automatically increase value, table primary key,
+b. returned_date: the Date field must not be empty;
+c. order_id: foreign key associated with the orde ID in the order table,
+d. parcel_id: foreign key associated with parcel ID in the parcels table,
+e. returned_money: float, may be empty.

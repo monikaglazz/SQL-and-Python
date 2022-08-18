@@ -1,0 +1,34 @@
+DSa - Database Sales:
+
+Base Sales with tables Orders and Products. 
+The Products table contains the following columns:
+a. productID – Integer, must not be empty (Main Key),
+b. productName – text field, must not be empty,
+c. Stock – integer, cannot be empty,
+d. Price – float, cannot be empty.
+The Orders table contains the following columns:
+a. orderID – integer, must not be empty (main key),
+b. Recipient – Text field, cannot be empty.
+The table linking the Orders table and the Products table is called OrdersProducts and contains the following columns:
+a. orderNumber – refers to the order ID from the tables;i Orders (Main Key)  
+b. productNumber – refers to the product ID from the table Products (foreign key)  
+c. Quantity – integer, cannot be empty.
+
+DSa_1:
+
+In Python a program has been written with an interface that allows the use of the delivery database. The program offers the following functions:
+a. Dispatch of parcels 
+b. Assignment of couriers to parcels
+c. Acknowledgement of receipt
+d. Checking the status of the parcel: none, dispatched, delivered
+e. Parcel information with the help of filters: sender, city, shipping dates/receiving dates.
+
+
+DSa_2:
+
+A text interface has been created in Python to use the Sales database. The program offers the following functions:
+a. Receipt of procurement details from the standard input: number, product name and quantity
+b. Check how many pieces of a particular product are in stock and how many have already been ordered
+c. Check whether a further order is possible after checking the current stock and the orders for the product
+d. Display a message if the quantity of the product is insufficient to place an order 
+e. if the quantity of the product in stock is sufficient: Create new entries in the tables Orders and OrdersProducts.
